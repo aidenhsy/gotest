@@ -1,0 +1,21 @@
+# ignore all files and directories starting with . or _
+.*
+_
+
+# ignore test files and directories
+*_test.go
+**/testdata
+**/testfixtures
+
+# ignore build output and cache directories
+bin/
+vendor/
+*.exe
+*.test
+*.out
+
+# ignore editor specific files and directories
+.idea/
+.vscode/
+
+# ignore any other files or directories that are not needed in the Docker build context
