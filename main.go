@@ -7,7 +7,7 @@ func main() {
 
 	r.POST("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "ponggg",
+			"message": "pongdgg",
 		})
 	})
 	r.Run(":4000") // listen and serve on 0.0.0.0:8080
