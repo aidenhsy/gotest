@@ -1,16 +1,5 @@
 version: '3'
 services:
-  # ngrok:
-  #   image: ngrok/ngrok
-  #   ports:
-  #     - 3000:4040
-  #   environment:
-  #     - NGROK_AUTHTOKEN="2NiGtWybf5f0ygrhv6bq6whYkl6_zh1qUdqY6kgq45KLPzBf"
-  #   command: ['http', 'jenkins:8080']
-  #   depends_on:
-  #     - jenkins
-  # jenkins:
-  #   image: jenkins/jenkins
   go:
     build: .
     ports:
