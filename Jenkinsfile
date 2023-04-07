@@ -11,7 +11,8 @@ pipeline {
                     sh 'ssh-keyscan 106.14.158.113 >> ~/.ssh/known_hosts'
                     sh """
                         ssh $SSH_USER@$REMOTE_HOST '
-                        cd /var/www
+                        cd /var/www/tshelpers
+                        git pull https://gitee.com/aidenhsy/tshelpers.git
                         ls
                         '
                     """
